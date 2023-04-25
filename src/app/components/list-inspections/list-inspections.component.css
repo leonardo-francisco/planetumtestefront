@@ -1,0 +1,31 @@
+#create{
+  margin-right: 55px;
+  float: right;
+  background-color: green;
+  color: white;
+  margin-top:15px
+}
+
+table {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 500px;
+}
+th.mat-header-cell {
+  text-align: left;
+  max-width: 300px;
+
+}
+
+.card{
+  margin-top: 35px;
+  float: center;
+  margin-right: 55px;
+  margin-left: 55px;
+}
+
+.w-100{
+  background-color:blue;
+  color:white;
+}

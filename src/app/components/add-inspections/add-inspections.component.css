@@ -1,0 +1,20 @@
+mat-card {
+  max-width: 400px;
+  margin: 2em auto;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+mat-form-field {
+  display: block;
+}
+
+#cadastrar{
+  color:white;
+  margin-right: 5px;
+}
+
+#cancelar{
+  color:white;
+  background-color: black;
+}

@@ -1,0 +1,29 @@
+<mat-card >
+  <mat-card-content>
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+          <h2>Add Inspections</h2>
+          <!-- <mat-form-field >
+            <input matInput placeholder="Company Id" formControlName="companyId" name="companyId" >
+            <mat-error *ngIf="hasError('companyId', 'required')">Company Id required</mat-error>
+          </mat-form-field> -->
+          <mat-form-field >
+            <input matInput placeholder="Broker Code" formControlName="brokerCode">
+            <mat-error *ngIf="hasError('brokerCode', 'required')">Broker Code is required</mat-error>
+          </mat-form-field>
+          <mat-form-field >
+            <input matInput placeholder="Product Code" formControlName="productCode">
+            <mat-error *ngIf="hasError('productCode', 'required')">Product Code is required</mat-error>
+          </mat-form-field>
+          <mat-form-field >
+            <input matInput placeholder="Product Name" formControlName="productName">
+            <mat-error *ngIf="hasError('productName', 'required')">Product Name is required</mat-error>
+          </mat-form-field>
+          <mat-form-field >
+            <input matInput placeholder="Inpection Number" formControlName="inspectionNumber" name="inspectionNumber" >
+            <mat-error *ngIf="hasError('inspectionNumber', 'required')">Inspection Number is required</mat-error>
+          </mat-form-field>
+          <button id="cadastrar" mat-raised-button color="primary">Cadastrar</button>
+          <button id="cancelar" routerLink="/list-inspections" mat-raised-button color="black">Cancel</button>
+      </form>
+  </mat-card-content>
+</mat-card>

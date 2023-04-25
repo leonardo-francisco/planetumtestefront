@@ -1,0 +1,11 @@
+<mat-toolbar color="primary" *ngIf="isLoggedIn$ | async">
+  <span>
+    <img src="assets/logo_pl.png" class="angular-logo">
+  </span>
+  <span class="fill-remaining-space"></span>
+  <button mat-button routerLink="/list-inspections" routerLinkActive="active"><mat-icon>dns</mat-icon>Inspections</button>
+  <button mat-button (click)="onLogout()" *ngIf="isLoggedIn$ | async">
+    <mat-icon>exit_to_app</mat-icon>
+    Logout
+  </button>
+</mat-toolbar>
